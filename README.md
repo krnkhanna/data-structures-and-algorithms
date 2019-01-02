@@ -32,10 +32,10 @@
 ### Tree
 
 1. Tree Traversals
-* Preorder
-* Postorder
-* Inorder
-* Breadth First
+    * Preorder
+    * Postorder
+    * Inorder
+    * Breadth First
 
 #### Binary Tree
 
