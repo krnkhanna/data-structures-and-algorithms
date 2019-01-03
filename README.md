@@ -1,12 +1,30 @@
 # Data Structures and Algorithms
 
-## Data Structures
+_This is my quick reference for Data Structure and Algorithms._
 
-### Array
+**Contributions:** Issues, comments and pull requests are super welcome :smiley:
 
-### Linked List
+## 1. TABLE OF CONTENTS
 
-#### Singly Linked List
+- [1. TABLE OF CONTENTS](#1-table-of-contents)
+- [2. DATA STRUCTURES](#2-data-structures)
+  - [1. ARRAY](#1-array)
+  - [2. LINKED LIST](#2-linked-list)
+  - [3. STACK](#3-stack)
+  - [4. QUEUE](#4-queue)
+  - [5. TREE](#5-queue)
+  - [6. GRAPH](#6-queue)
+  - [7. MATRIX](#7-queue)
+- [3. ADVANCED DATA STRUCTURES](#3-advanced-data-structures)
+- [4. ALGORITHMS](#4-algorithms)
+
+## 2. DATA STRUCTURES
+
+### 1. ARRAY
+
+### 2. LINKED LIST
+
+#### 1. Singly Linked List
 
 1. Insertion
 2. Searching
@@ -14,28 +32,40 @@
 4. Traversing the List
 5. Traversing the List in reverse order
 
-#### Doubly Linked List
+#### 2. Doubly Linked List
 
 1. Insertion
 2. Deletion
 3. Traversing the List
 4. Traversing the List in reverse order
 
-#### Circular Linked List
+#### 3. Circular Linked List
 
-### Stack
+1. Insertion
+2. Searching
+3. Deletion
+4. Traversing the List
 
-### Queue
+### 3. STACK
 
+1. Push
+2. Pop
+3. Peek
 
+### 4. QUEUE
 
-### Tree
+1. Insertion
+2. Searching
+3. Deletion
+4. Traversing the List
+
+### 5. TREE
 
 1. Tree Traversals
-    * Preorder
-    * Postorder
-    * Inorder
-    * Breadth First
+   - Preorder
+   - Postorder
+   - Inorder
+   - Breadth First
 
 #### Binary Tree
 
@@ -55,20 +85,17 @@
 3. Searching
 4. Traversal
 
-### Graph
+### 6. GRAPH
 
-### Matrix
+### 7. MATRIX
 
-### Advanced Data Structures
+## 3. ADVANCED DATA STRUCTURES
 
-#### Memory efficient Doubly Linked List
+### 1. Memory efficient Doubly Linked List
 
-#### Trie
+### 2. Trie
 
-
-
-
-## Algorithms
+## 4. ALGORITHMS
 
 ### Sorting
 
@@ -113,4 +140,5 @@ c) you need speed when iterating through all the elements in sequence. You can u
 d) memory is a concern. Filled arrays take up less memory than linked lists. Each element in the array is just the data. Each linked list node requires the data as well as one (or more) pointers to the other elements in the linked list.
 
 ## Singly Linked List
+
 head -> nextNode -> nextNode -> nextNode
