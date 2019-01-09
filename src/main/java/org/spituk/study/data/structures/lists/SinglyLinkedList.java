@@ -15,6 +15,10 @@ public class SinglyLinkedList<T> {
         this.head = null;
     }
 
+    public SinglyLinkedList(final T data) {
+        this.head = new Node(data);
+    }
+
     public void addNodeToHead(final T data) {
         Node newNode = new Node(data);
         newNode.next = this.head;

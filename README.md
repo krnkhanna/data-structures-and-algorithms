@@ -117,17 +117,17 @@ An array is a collection of items stored at contiguous memory locations. The ide
 > Time Complexity : O(n<sup>2</sup>)
 
 ```java
-int arrayLength = array.length;
-for (int index = 0; index < arrayLength; index++) {
-    int key = array[index];
-    int j = index - 1;
-    /* Move elements of arr[0..i-1], that are greater than key,
-    to one position ahead of their current position*/
-    while (j > 0 || array[j] > key) {
-        array[j + 1] = array[j];
-        j = j - 1;
+public static void sort(int[] array) {
+    int arrayLength = array.length;
+    for (int index = 0; index < arrayLength; index++) {
+        int key = array[index];
+        int j = index - 1;
+        while (j >= 0 && array[j] > key) {
+            array[j + 1] = array[j];
+            j = j - 1;
+        }
+        array[j + 1] = key;
     }
-    array[j] = key;
 }
 ```
 
@@ -136,17 +136,19 @@ for (int index = 0; index < arrayLength; index++) {
 > Time Complexity : O(n<sup>2</sup>)
 
 ```java
-int arrayLength = array.length;
-for (int index = 0; index < arrayLength; index++) {
-    int minIndex = index;
-    for (int j = index + 1; j < arrayLength; j++) {
-        if (array[j] < array[minIndex]) {
-            minIndex = j;
+public static void sort(int[] array) {
+    int arrayLength = array.length;
+    for (int index = 0; index < arrayLength; index++) {
+        int minIndex = index;
+        for (int j = index + 1; j < arrayLength; j++) {
+            if (array[j] < array[minIndex]) {
+                minIndex = j;
+            }
         }
+        int temp = array[minIndex];
+        array[minIndex] = array[index];
+        array[index] = temp;
     }
-    int temp = array[minIndex];
-    array[minIndex] = array[index];
-    array[index] = temp;
 }
 ```
 
@@ -155,13 +157,15 @@ for (int index = 0; index < arrayLength; index++) {
 > Time Complexity : O(n<sup>2</sup>)
 
 ```java
-int arrayLength = array.length;
-for (int index = 0; index < arrayLength; index++) {
-    for (int j = 0; j < arrayLength - index - 1; j++) {
-        if (array[j] > array[j + 1]) {
-            int temp = array[j + 1];
-            array[j + 1] = array[j];
-            array[j] = temp;
+public static void sort(int[] array) {
+    int arrayLength = array.length;
+    for (int index = 0; index < arrayLength; index++) {
+        for (int j = 0; j < arrayLength - index - 1; j++) {
+            if (array[j] > array[j + 1]) {
+                int temp = array[j + 1];
+                array[j + 1] = array[j];
+                array[j] = temp;
+            }
         }
     }
 }
