@@ -8,24 +8,24 @@ _This is my quick reference for Data Structure and Algorithms._
 
 - [1. TABLE OF CONTENTS](#1-table-of-contents)
 - [2. DATA STRUCTURES](#2-data-structures)
-  - [2.1. ARRAY](#1-array)
-  - [2.2. LINKED LIST](#2-linked-list)
-    - [2.2.1. SINGLY LINKED LIST](#2-linked-list)
-    - [2.2.2. DOUBLY LINKED LIST](#2-linked-list)
-    - [2.2.3. CIRCULAR LINKED LIST](#2-linked-list)
-  - [2.3. STACK](#3-stack)
-  - [2.4. QUEUE](#4-queue)
-  - [2.5. TREE](#5-queue)
-  - [2.6. GRAPH](#6-queue)
-  - [2.7. MATRIX](#7-queue)
+  - [2.1. ARRAY](#21-array)
+  - [2.2. LINKED LIST](#22-linked-list)
+    - [2.2.1. SINGLY LINKED LIST](#221-linked-list)
+    - [2.2.2. DOUBLY LINKED LIST](#222-linked-list)
+    - [2.2.3. CIRCULAR LINKED LIST](#223-linked-list)
+  - [2.3. STACK](#23-stack)
+  - [2.4. QUEUE](#24-queue)
+  - [2.5. TREE](#25-queue)
+  - [2.6. GRAPH](#26-queue)
+  - [2.7. MATRIX](#27-queue)
 - [3. ADVANCED DATA STRUCTURES](#3-advanced-data-structures)
 - [4. ALGORITHMS](#4-algorithms)
-  - [4.1. SORTING](#1-array)
-    - [4.1.1. INSERTION SORT](#1-array)
-    - [4.1.2. SELECTION SORT](#1-array)
-    - [4.1.3. BUBBLE SORT](#1-array)
-    - [4.1.4. QUICK SORT](#1-array)
-    - [4.1.5. MERGE SORT](#1-array)
+  - [4.1. SORTING](#41-sorting)
+    - [4.1.1. INSERTION SORT](#411-insertion-sort)
+    - [4.1.2. SELECTION SORT](#412-selection-sort)
+    - [4.1.3. BUBBLE SORT](#413-bubble-sort)
+    - [4.1.4. QUICK SORT](#414-quick-sort)
+    - [4.1.5. MERGE SORT](#415-merge-sort)
 
 ## 2. DATA STRUCTURES
 
@@ -114,7 +114,7 @@ An array is a collection of items stored at contiguous memory locations. The ide
 
 #### 4.1.1. INSERTION SORT
 
-> Time Complexity : O(n^2)
+> Time Complexity : O(n<sup>2</sup>)
 
 ```java
 int arrayLength = array.length;
@@ -133,7 +133,7 @@ for (int index = 0; index < arrayLength; index++) {
 
 #### 4.1.2. SELECTION SORT
 
-> Time Complexity : O(n^2)
+> Time Complexity : O(n<sup>2</sup>)
 
 ```java
 int arrayLength = array.length;
@@ -152,7 +152,7 @@ for (int index = 0; index < arrayLength; index++) {
 
 #### 4.1.3. BUBBLE SORT
 
-> Time Complexity : O(n^2)
+> Time Complexity : O(n<sup>2</sup>)
 
 ```java
 int arrayLength = array.length;
