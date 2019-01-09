@@ -9,7 +9,6 @@ package org.spituk.study.algorithms.sorting;
  */
 public class BubbleSortTest {
 
-
     public static void main(String[] args) {
         int[] array = {2, 1, 5, 6, 19, 10, 7, 2};
         BubbleSort.sort(array);

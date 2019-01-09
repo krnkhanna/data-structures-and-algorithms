@@ -6,20 +6,20 @@ package org.spituk.study.algorithms.sorting;
  *
  * @author Karan Khanna
  * @version 1.0
- * @since 12/9/2018
+ * @since 1/9/2019
  */
-public class BubbleSort {
+public class InsertionSort {
 
   public static void sort(int[] array) {
     int arrayLength = array.length;
     for (int index = 0; index < arrayLength; index++) {
-      for (int j = 0; j < arrayLength - index - 1; j++) {
-        if (array[j] > array[j + 1]) {
-          int temp = array[j + 1];
-          array[j + 1] = array[j];
-          array[j] = temp;
-        }
+      int key = array[index];
+      int j = index - 1;
+      while (j >= 0 && array[j] > key) {
+        array[j + 1] = array[j];
+        j = j - 1;
       }
+      array[j + 1] = key;
     }
     return;
   }
