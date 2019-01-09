@@ -8,23 +8,36 @@ _This is my quick reference for Data Structure and Algorithms._
 
 - [1. TABLE OF CONTENTS](#1-table-of-contents)
 - [2. DATA STRUCTURES](#2-data-structures)
-  - [1. ARRAY](#1-array)
-  - [2. LINKED LIST](#2-linked-list)
-  - [3. STACK](#3-stack)
-  - [4. QUEUE](#4-queue)
-  - [5. TREE](#5-queue)
-  - [6. GRAPH](#6-queue)
-  - [7. MATRIX](#7-queue)
+  - [2.1. ARRAY](#1-array)
+  - [2.2. LINKED LIST](#2-linked-list)
+    - [2.2.1. SINGLY LINKED LIST](#2-linked-list)
+    - [2.2.2. DOUBLY LINKED LIST](#2-linked-list)
+    - [2.2.3. CIRCULAR LINKED LIST](#2-linked-list)
+  - [2.3. STACK](#3-stack)
+  - [2.4. QUEUE](#4-queue)
+  - [2.5. TREE](#5-queue)
+  - [2.6. GRAPH](#6-queue)
+  - [2.7. MATRIX](#7-queue)
 - [3. ADVANCED DATA STRUCTURES](#3-advanced-data-structures)
 - [4. ALGORITHMS](#4-algorithms)
+  - [4.1. SORTING](#1-array)
+    - [4.1.1. INSERTION SORT](#1-array)
+    - [4.1.2. SELECTION SORT](#1-array)
+    - [4.1.3. BUBBLE SORT](#1-array)
+    - [4.1.4. QUICK SORT](#1-array)
+    - [4.1.5. MERGE SORT](#1-array)
 
 ## 2. DATA STRUCTURES
 
-### 1. ARRAY
+### 2.1. ARRAY
 
-### 2. LINKED LIST
+An array is a collection of items stored at contiguous memory locations. The idea is to store multiple items of the same type together.
 
-#### 1. Singly Linked List
+`int[] intArray = new int[]{ 1,2,3,4,5,6,7,8,9,10 };`
+
+### 2.2. LINKED LIST
+
+#### 2.2.1. SINGLY LINKED LIST
 
 1. Insertion
 2. Searching
@@ -32,34 +45,34 @@ _This is my quick reference for Data Structure and Algorithms._
 4. Traversing the List
 5. Traversing the List in reverse order
 
-#### 2. Doubly Linked List
+#### 2.2.2. DOUBLY LINKED LIST
 
 1. Insertion
 2. Deletion
 3. Traversing the List
 4. Traversing the List in reverse order
 
-#### 3. Circular Linked List
+#### 2.2.3. CIRCULAR LINKED LIST
 
 1. Insertion
 2. Searching
 3. Deletion
 4. Traversing the List
 
-### 3. STACK
+### 2.3. STACK
 
 1. Push
 2. Pop
 3. Peek
 
-### 4. QUEUE
+### 2.4. QUEUE
 
 1. Insertion
 2. Searching
 3. Deletion
 4. Traversing the List
 
-### 5. TREE
+### 2.5. TREE
 
 1. Tree Traversals
    - Preorder
@@ -85,9 +98,9 @@ _This is my quick reference for Data Structure and Algorithms._
 3. Searching
 4. Traversal
 
-### 6. GRAPH
+### 2.6. GRAPH
 
-### 7. MATRIX
+### 2.7. MATRIX
 
 ## 3. ADVANCED DATA STRUCTURES
 
@@ -97,17 +110,35 @@ _This is my quick reference for Data Structure and Algorithms._
 
 ## 4. ALGORITHMS
 
-### Sorting
+### 4.1. SORTING
 
-#### Bubble Sort
+#### 4.1.1. INSERTION SORT
 
-#### Insertion Sort
+> Time Complexity : O(n^2)
 
-#### Selection Sort
+```java
+for (int i=1; i < arr.length; ++i)
+{
+    int key = arr[i];
+    int j = i-1;
+    /* Move elements of arr[0..i-1], that are greater than key,
+    to one position ahead of their current position*/
+    while (j>=0 && arr[j] > key)
+    {
+        arr[j+1] = arr[j];
+        j = j-1;
+    }
+    arr[j+1] = key;
+}
+```
 
-#### Merge Sort
+#### 4.1.2. SELECTION SORT
 
-#### Quick Sort
+#### 4.1.3. BUBBLE SORT
+
+#### 4.1.4. QUICK SORT
+
+#### 4.1.5. MERGE SORT
 
 #### Shell Sort
 
